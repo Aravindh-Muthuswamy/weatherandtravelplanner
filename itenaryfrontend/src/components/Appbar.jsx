@@ -5,6 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from '@mui/material';
 
 export default function Appbar() {
   return (
@@ -18,11 +19,14 @@ export default function Appbar() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
+            {/* <MenuIcon /> */}
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" component="div">
             Travel Itenary
-          </Typography>
+          </Typography>&nbsp;&nbsp;
+          <Link href="/" color="inherit" underline="none">Home</Link>&nbsp;&nbsp;
+          <Link href="/additenar" color="inherit" underline="none">Add Itenary</Link>
+          
         </Toolbar>
       </AppBar>
     </Box>

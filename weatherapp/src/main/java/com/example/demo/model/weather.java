@@ -32,14 +32,14 @@ public class weather {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String cityname;
-	private Timestamp datetimeincity;
-	private double temp;
-	private double feels;
-	private double min;
-	private double max;
-	private double humidity;
-	private String condition;
-	private String description;
+	@Column(columnDefinition="TEXT")
+	private String dxjson;
+	public String getDxjson() {
+		return dxjson;
+	}
+	public void setDxjson(String dxjson) {
+		this.dxjson = dxjson;
+	}
 	public int getId() {
 		return id;
 	}
@@ -52,53 +52,7 @@ public class weather {
 	public void setCityname(String cityname) {
 		this.cityname = cityname;
 	}
-	public Timestamp getDatetimeincity() {
-		return datetimeincity;
-	}
-	public void setDatetimeincity(Timestamp datetimeincity) {
-		this.datetimeincity = datetimeincity;
-	}
-	public double getTemp() {
-		return temp;
-	}
-	public void setTemp(double temp) {
-		this.temp = temp;
-	}
-	public double getFeels() {
-		return feels;
-	}
-	public void setFeels(double feels) {
-		this.feels = feels;
-	}
-	public double getMin() {
-		return min;
-	}
-	public void setMin(double min) {
-		this.min = min;
-	}
-	public double getMax() {
-		return max;
-	}
-	public void setMax(double max) {
-		this.max = max;
-	}
-	public double getHumidity() {
-		return humidity;
-	}
-	public void setHumidity(double humidity) {
-		this.humidity = humidity;
-	}
-	public String getCondition() {
-		return condition;
-	}
-	public void setCondition(String condition) {
-		this.condition = condition;
-	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
-	}
+	
+	
 	
 }
