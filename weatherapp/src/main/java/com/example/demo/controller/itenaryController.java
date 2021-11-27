@@ -49,7 +49,6 @@ public class itenaryController {
 	@PutMapping("/{id}")
 	public ResponseEntity<itenary> update(@RequestBody itenary iten, @PathVariable Integer id){
 		try {
-			itenary exisItenar = itenaryser.getItenaryByID(id);
 			itenaryser.saveItenary(iten);
 			return new ResponseEntity<>(HttpStatus.OK);
 		}catch (NoSuchElementException e) {
