@@ -42,4 +42,10 @@ public class cities {
 	public void setTraveldate(Date traveldate) {
 		this.traveldate = traveldate;
 	}
+	public double getTemp() {
+		return temp;
+	}
+	public void setTemp(double temp) {
+		this.temp = temp;
+	}
 }

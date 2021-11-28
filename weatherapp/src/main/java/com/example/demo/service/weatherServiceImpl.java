@@ -36,7 +36,11 @@ public class weatherServiceImpl implements weatherService {
 		// TODO Auto-generated method stub
 		weatherrepo.deleteById(id);
 	}
-
+	@Override
+	public void deleteByName(String cityname) {
+		weatherrepo.removeBycityname(cityname);
+	}
+	
 	@Override
 	public List<weather> getWeatherByCity(String cityname) {
 		// TODO Auto-generated method stub
