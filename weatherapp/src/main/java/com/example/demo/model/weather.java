@@ -5,24 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.*;
-
-//"temp": -1.08,
-//"feels_like": -1.08,
-//"temp_min": -1.08,
-//"temp_max": -1.08,
-//"pressure": 1022,
-//"sea_level": 1022,
-//"grnd_level": 998,
-//"humidity": 66,
-//"temp_kf": 0
-//},
-//"weather": [
-//{
-//    "id": 800,
-//    "main": "Clear",
-//    "description": "clear sky",
-//    "icon": "01n"
-//}
 @Entity
 @Table(name="weatherdata")
 public class weather {
